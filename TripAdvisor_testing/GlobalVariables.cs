@@ -11,10 +11,13 @@ namespace TripAdvisor_testing
 {
     public class GlobalVariables
     {
-        public static string URL = "https://www.google.com";
-        public static IWebDriver driver;
+        public static string URL = "https://discoverit.netlify.com/";
 
+        public static string emailPositive = "testwzim@testwzim.com";
+        public static string passwordPositive = "Admin123.";
 
-       
+        public static string emailNegative = "a@a.com";
+        public static string passwordNegative = "ZleHaslo";
+
     }
 }

@@ -72,10 +72,15 @@
   <ItemGroup>
     <Compile Include="BaseTest.cs" />
     <Compile Include="GlobalVariables.cs" />
-    <Compile Include="POM\Action\GoogleAction.cs" />
-    <Compile Include="POM\View\GoogleView.cs" />
-    <Compile Include="GoogleTest.cs" />
+    <Compile Include="POM\Action\MainPageAction.cs" />
+    <Compile Include="POM\Action\LoginPageAction.cs" />
+    <Compile Include="POM\Action\RegisterPageAction.cs" />
+    <Compile Include="POM\View\MainPageView.cs" />
+    <Compile Include="POM\View\LoginPageView.cs" />
+    <Compile Include="POM\View\RegisterPageView.cs" />
+    <Compile Include="Tests\TestLogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\TestRegister.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
