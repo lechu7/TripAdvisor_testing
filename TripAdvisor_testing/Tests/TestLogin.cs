@@ -55,5 +55,31 @@ namespace TripAdvisor_testing
             loginPageAction.loginBTClick();
             //ToDo Weryfikacja
         }
+        [Test]
+        public void Login4()
+        {
+            //PROBA LOGOWANIA BEZ LOGINU
+            MainPageAction mainPageAction = new MainPageAction(driver);
+            LoginPageAction loginPageAction = new LoginPageAction(driver);
+
+            mainPageAction.clickUzytkownikBT();
+            mainPageAction.clickZalogujBT();
+            loginPageAction.passwordETSet(GlobalVariables.passwordPositive);
+            loginPageAction.loginBTClick();
+            loginPageAction.emailErrValidate();
+        }
+        [Test]
+        public void Login5()
+        {
+            //PROBA LOGOWANIA BEZ HASLA
+            MainPageAction mainPageAction = new MainPageAction(driver);
+            LoginPageAction loginPageAction = new LoginPageAction(driver);
+
+            mainPageAction.clickUzytkownikBT();
+            mainPageAction.clickZalogujBT();
+            loginPageAction.passwordETSet(GlobalVariables.emailPositive);
+            loginPageAction.loginBTClick();
+            loginPageAction.emailErrValidate();
+        }
     }
 }

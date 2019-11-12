@@ -23,6 +23,9 @@ namespace TripAdvisor_testing
         [FindsBy(How = How.XPath, Using = "//label[text()='Email']")]
         protected IWebElement emailTX;
 
+        [FindsBy(How = How.XPath, Using = "//*[text()='Email']/following-sibling::div/div")]
+        protected IWebElement emailErr;
+
         [FindsBy(How = How.Id, Using = "login")]
         protected IWebElement emailET;
 
@@ -31,6 +34,9 @@ namespace TripAdvisor_testing
 
         [FindsBy(How = How.Id, Using = "password")]
         protected IWebElement passwordET;
+
+        [FindsBy(How = How.XPath, Using = "//*[text()='Password']/following-sibling::div/div")]
+        protected IWebElement passwordErr;
 
         [FindsBy(How = How.XPath, Using = "//label[text()='zapamiętaj']")]
         protected IWebElement saveTX;

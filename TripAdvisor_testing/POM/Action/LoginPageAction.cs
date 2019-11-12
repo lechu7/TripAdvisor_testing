@@ -47,6 +47,14 @@ namespace TripAdvisor_testing
         {
             loginBT.Click();
         }
+        public void emailErrValidate()
+        {
+            Assert.True(emailErr.Displayed);
+        }
+        public void passwordErrValidate()
+        {
+            Assert.True(passwordErr.Displayed);
+        }
         public void positiveLogin()
         {
             emailET.SendKeys(GlobalVariables.emailPositive);
