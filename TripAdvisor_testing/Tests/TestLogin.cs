@@ -77,7 +77,7 @@ namespace TripAdvisor_testing
 
             mainPageAction.clickUzytkownikBT();
             mainPageAction.clickZalogujBT();
-            loginPageAction.passwordETSet(GlobalVariables.emailPositive);
+            loginPageAction.emailETSet(GlobalVariables.emailPositive);
             loginPageAction.loginBTClick();
             loginPageAction.passwordErrValidate();
         }
