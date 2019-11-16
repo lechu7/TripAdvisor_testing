@@ -79,7 +79,7 @@ namespace TripAdvisor_testing
             mainPageAction.clickZalogujBT();
             loginPageAction.passwordETSet(GlobalVariables.emailPositive);
             loginPageAction.loginBTClick();
-            loginPageAction.emailErrValidate();
+            loginPageAction.passwordErrValidate();
         }
     }
 }
