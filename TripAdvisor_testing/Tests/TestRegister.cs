@@ -5,7 +5,7 @@ using OpenQA.Selenium.Firefox;
 
 namespace TripAdvisor_testing
 {
-    class TestRegister:BaseTest
+    class TestRegister : BaseTest
     {
         [Test]
         public void Register1()
@@ -13,7 +13,6 @@ namespace TripAdvisor_testing
             //WALIDACJA FORMATKI - Łukaś
             MainPageAction mainPageAction = new MainPageAction(driver);
             RegisterPageAction registerPageAction = new RegisterPageAction(driver);
-
 
             mainPageAction.clickUzytkownikBT();
             mainPageAction.clickZarejestrujBT();
@@ -29,7 +28,6 @@ namespace TripAdvisor_testing
             registerPageAction.registerRepeatPasswordTXValidate();
             registerPageAction.registerRepeatPasswordETSet("password");
             registerPageAction.registerBTClick();
-
         }
 
         [Test]
@@ -45,8 +43,118 @@ namespace TripAdvisor_testing
             registerPageAction.registerSurnameETSet(GlobalVariables.registerSurnameCorrect);
             registerPageAction.registerEmailETSet(GlobalVariables.registerEmailCorrect);
             registerPageAction.registerPasswordETSet(GlobalVariables.registerPasswordCorrect);
-            registerPageAction.registerRepeatPasswordETSet(GlobalVariables.registerRepeatPasswordCorrect);
+            registerPageAction.registerRepeatPasswordETSet(GlobalVariables.registerPasswordCorrect);
             registerPageAction.registerBTClick();
+            //ToDo Weryfikacja
+        }
+
+        [Test]
+        public void Register3()
+        {
+            //REJESTRACJA niepoprawny e-mail - Łukaś
+            MainPageAction mainPageAction = new MainPageAction(driver);
+            RegisterPageAction registerPageAction = new RegisterPageAction(driver);
+
+            mainPageAction.clickUzytkownikBT();
+            mainPageAction.clickZarejestrujBT();
+            registerPageAction.registerNameETSet(GlobalVariables.registerNameCorrect);
+            registerPageAction.registerSurnameETSet(GlobalVariables.registerSurnameCorrect);
+            registerPageAction.registerEmailETSet(GlobalVariables.registerEmailIncorrect);
+            registerPageAction.registerPasswordETSet(GlobalVariables.registerPasswordCorrect);
+            registerPageAction.registerRepeatPasswordETSet(GlobalVariables.registerPasswordCorrect);
+            registerPageAction.registerBTClick();
+            //ToDo Weryfikacja
+        }
+
+        [Test]
+        public void Register4()
+        {
+            //REJESTRACJA hasło bez wielkiej litery i cyfry - Łukaś
+            MainPageAction mainPageAction = new MainPageAction(driver);
+            RegisterPageAction registerPageAction = new RegisterPageAction(driver);
+
+            mainPageAction.clickUzytkownikBT();
+            mainPageAction.clickZarejestrujBT();
+            registerPageAction.registerNameETSet(GlobalVariables.registerNameCorrect);
+            registerPageAction.registerSurnameETSet(GlobalVariables.registerSurnameCorrect);
+            registerPageAction.registerEmailETSet(GlobalVariables.registerEmailCorrect);
+            registerPageAction.registerPasswordETSet(GlobalVariables.registerPasswordIncorrect1);
+            registerPageAction.registerRepeatPasswordETSet(GlobalVariables.registerPasswordIncorrect1);
+            registerPageAction.registerBTClick();
+            registerPageAction.registerPasswordErrValidate();
+            //ToDo Weryfikacja
+        }
+
+        [Test]
+        public void Register5()
+        {
+            //REJESTRACJA hasło za krótkie - Łukaś
+            MainPageAction mainPageAction = new MainPageAction(driver);
+            RegisterPageAction registerPageAction = new RegisterPageAction(driver);
+
+            mainPageAction.clickUzytkownikBT();
+            mainPageAction.clickZarejestrujBT();
+            registerPageAction.registerNameETSet(GlobalVariables.registerNameCorrect);
+            registerPageAction.registerSurnameETSet(GlobalVariables.registerSurnameCorrect);
+            registerPageAction.registerEmailETSet(GlobalVariables.registerEmailCorrect);
+            registerPageAction.registerPasswordETSet(GlobalVariables.registerPasswordIncorrect2);
+            registerPageAction.registerRepeatPasswordETSet(GlobalVariables.registerPasswordIncorrect2);
+            registerPageAction.registerBTClick();
+            registerPageAction.registerPasswordErrValidate();
+            //ToDo Weryfikacja
+        }
+
+        [Test]
+        public void Register6()
+        {
+            //REJESTRACJA zle powtórzone hasło - Łukaś
+            MainPageAction mainPageAction = new MainPageAction(driver);
+            RegisterPageAction registerPageAction = new RegisterPageAction(driver);
+
+            mainPageAction.clickUzytkownikBT();
+            mainPageAction.clickZarejestrujBT();
+            registerPageAction.registerNameETSet(GlobalVariables.registerNameCorrect);
+            registerPageAction.registerSurnameETSet(GlobalVariables.registerSurnameCorrect);
+            registerPageAction.registerEmailETSet(GlobalVariables.registerEmailCorrect);
+            registerPageAction.registerPasswordETSet(GlobalVariables.registerPasswordCorrect);
+            registerPageAction.registerRepeatPasswordETSet(GlobalVariables.registerPasswordIncorrect1);
+            registerPageAction.registerBTClick();
+            registerPageAction.registerRepeatPasswordErrValidate();
+            //ToDo Weryfikacja
+        }
+
+        [Test]
+        public void Register7()
+        {
+            //REJESTRACJA brak imienia i nazwiska - Łukaś
+            MainPageAction mainPageAction = new MainPageAction(driver);
+            RegisterPageAction registerPageAction = new RegisterPageAction(driver);
+
+            mainPageAction.clickUzytkownikBT();
+            mainPageAction.clickZarejestrujBT();
+            registerPageAction.registerEmailETSet(GlobalVariables.registerEmailCorrect);
+            registerPageAction.registerPasswordETSet(GlobalVariables.registerPasswordCorrect);
+            registerPageAction.registerRepeatPasswordETSet(GlobalVariables.registerPasswordCorrect);
+            registerPageAction.registerBTClick();
+            registerPageAction.registerNameErrValidate();
+            registerPageAction.registerSurnameErrValidate();
+            //ToDo Weryfikacja
+        }
+
+        [Test]
+        public void Register8()
+        {
+            //REJESTRACJA nie wpisano żadnych danych - Łukaś
+            MainPageAction mainPageAction = new MainPageAction(driver);
+            RegisterPageAction registerPageAction = new RegisterPageAction(driver);
+
+            mainPageAction.clickUzytkownikBT();
+            mainPageAction.clickZarejestrujBT();
+            registerPageAction.registerBTClick();
+            registerPageAction.registerNameErrValidate();
+            registerPageAction.registerSurnameErrValidate();
+            registerPageAction.registerEmailErrValidate();
+            registerPageAction.registerPasswordErrValidate();
             //ToDo Weryfikacja
         }
     }

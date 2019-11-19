@@ -17,7 +17,7 @@ namespace TripAdvisor_testing
             PageFactory.InitElements(driver, this);
         }
 
-        [FindsBy(How = How.XPath, Using = "//h1[text()='zaloguj']")]
+        [FindsBy(How = How.XPath, Using = "//h1[text()='Zaloguj']")]
         protected IWebElement zalogujTitleTX;
 
         [FindsBy(How = How.XPath, Using = "//label[text()='Email']")]

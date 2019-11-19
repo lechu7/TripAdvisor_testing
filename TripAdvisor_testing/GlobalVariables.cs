@@ -19,11 +19,13 @@ namespace TripAdvisor_testing
         public static string emailNegative = "a@a.com";
         public static string passwordNegative = "ZleHaslo";
 
-        //rejestracja prawidłowe dane - Łukaś
+        //rejestracja zmienne - Łukaś
         public static string registerNameCorrect = "Alfred";
         public static string registerSurnameCorrect = "Kamyczek";
         public static string registerEmailCorrect = "alfredkamyczek@wzim.com";
         public static string registerPasswordCorrect = "Abcdefgh1";
-        public static string registerRepeatPasswordCorrect = "Abcdefgh1";
+        public static string registerEmailIncorrect = "alfredkamyczekwzim.com";
+        public static string registerPasswordIncorrect1 = "abcdefghij";
+        public static string registerPasswordIncorrect2 = "Abcd1";
     }
 }

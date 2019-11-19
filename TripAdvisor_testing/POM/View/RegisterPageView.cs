@@ -17,11 +17,14 @@ namespace TripAdvisor_testing
             PageFactory.InitElements(driver, this);
         }
 
-        [FindsBy(How = How.XPath, Using = "//h1[text()='zarejestruj ']")]
+        [FindsBy(How = How.XPath, Using = "//h1[text()='Zarejestruj ']")]
         protected IWebElement registerTitleTX;
 
         [FindsBy(How = How.XPath, Using = "//label[text()='Imię']")]
         protected IWebElement registerNameTX;
+
+        [FindsBy(How = How.XPath, Using = "//*[text()='Imię']/following-sibling::div/div")]
+        protected IWebElement registerNameErr;
 
         [FindsBy(How = How.Id, Using = "name")]
         protected IWebElement registerNameET;
@@ -29,11 +32,17 @@ namespace TripAdvisor_testing
         [FindsBy(How = How.XPath, Using = "//label[text()='Nazwisko']")]
         protected IWebElement registerSurnameTX;
 
+        [FindsBy(How = How.XPath, Using = "//*[text()='Nazwisko']/following-sibling::div/div")]
+        protected IWebElement registerSurnameErr;
+
         [FindsBy(How = How.Id, Using = "surname")]
         protected IWebElement registerSurnameET;
 
         [FindsBy(How = How.XPath, Using = "//label[text()='E-mail']")]
         protected IWebElement registerEmailTX;
+
+        [FindsBy(How = How.XPath, Using = "//*[text()='E-mail']/following-sibling::div/div")]
+        protected IWebElement registerEmailErr;
 
         [FindsBy(How = How.Id, Using = "email")]
         protected IWebElement registerEmailET;
@@ -41,11 +50,17 @@ namespace TripAdvisor_testing
         [FindsBy(How = How.XPath, Using = "//label[text()='Hasło']")]
         protected IWebElement registerPasswordTX;
 
+        [FindsBy(How = How.XPath, Using = "//*[text()='Hasło']/following-sibling::div/div")]
+        protected IWebElement registerPasswordErr;
+
         [FindsBy(How = How.Id, Using = "password")]
         protected IWebElement registerPasswordET;
 
         [FindsBy(How = How.XPath, Using = "//label[text()='Powtórz hasło']")]
         protected IWebElement registerRepeatPasswordTX;
+
+        [FindsBy(How = How.XPath, Using = "//*[text()='Powtórz hasło']/following-sibling::div/div")]
+        protected IWebElement registerRepeatPasswordErr;
 
         [FindsBy(How = How.Id, Using = "repeatPassword")]
         protected IWebElement registerRepeatPasswordET;

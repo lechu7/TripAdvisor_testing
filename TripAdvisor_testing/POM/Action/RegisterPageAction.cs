@@ -27,6 +27,10 @@ namespace TripAdvisor_testing
         {
             registerNameET.SendKeys(value);
         }
+        public void registerNameErrValidate()
+        {
+            Assert.True(registerNameErr.Displayed);
+        }
         public void registerSurnameTXValidate()
         {
             Assert.IsTrue(registerSurnameTX.Displayed);
@@ -34,6 +38,10 @@ namespace TripAdvisor_testing
         public void registerSurnameETSet(String value)
         {
             registerSurnameET.SendKeys(value);
+        }
+        public void registerSurnameErrValidate()
+        {
+            Assert.True(registerSurnameErr.Displayed);
         }
         public void registerEmailTXValidate()
         {
@@ -43,6 +51,10 @@ namespace TripAdvisor_testing
         {
             registerEmailET.SendKeys(value);
         }
+        public void registerEmailErrValidate()
+        {
+            Assert.True(registerEmailErr.Displayed);
+        }
         public void registerPasswordTXValidate()
         {
             Assert.IsTrue(registerPasswordTX.Displayed);
@@ -51,6 +63,10 @@ namespace TripAdvisor_testing
         {
             registerPasswordET.SendKeys(value);
         }
+        public void registerPasswordErrValidate()
+        {
+            Assert.True(registerPasswordErr.Displayed);
+        }
         public void registerRepeatPasswordTXValidate()
         {
             Assert.IsTrue(registerRepeatPasswordTX.Displayed);
@@ -58,6 +74,10 @@ namespace TripAdvisor_testing
         public void registerRepeatPasswordETSet(String value)
         {
             registerRepeatPasswordET.SendKeys(value);
+        }
+        public void registerRepeatPasswordErrValidate()
+        {
+            Assert.True(registerRepeatPasswordErr.Displayed);
         }
         public void registerBTClick()
         {
