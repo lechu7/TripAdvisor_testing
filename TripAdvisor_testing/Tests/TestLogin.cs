@@ -38,7 +38,7 @@ namespace TripAdvisor_testing
             mainPageAction.clickUzytkownikBT();
             mainPageAction.clickZalogujBT();
             loginPageAction.positiveLogin();
-            //ToDo Weryfikacja
+            loginPageAction.positiveLoginTXValidate();
         }
 
         [Test]
@@ -53,7 +53,7 @@ namespace TripAdvisor_testing
             loginPageAction.emailETSet(GlobalVariables.emailNegative);
             loginPageAction.passwordETSet(GlobalVariables.passwordNegative);
             loginPageAction.loginBTClick();
-            //ToDo Weryfikacja
+            loginPageAction.negativeLoginTXValidate();
         }
         [Test]
         public void Login4()

@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace TripAdvisor_testing
@@ -18,6 +19,16 @@ namespace TripAdvisor_testing
         public void zalogujTitleTXValidate()
         {
             Assert.IsTrue(zalogujTitleTX.Displayed);
+        }
+        public void positiveLoginTXValidate()
+        {
+            Thread.Sleep(2000);
+            Assert.IsTrue(positiveLoginTX.Displayed);
+        }
+        public void negativeLoginTXValidate()
+        {
+            Thread.Sleep(2000);
+            Assert.IsTrue(negativeLoginTX.Displayed);
         }
         public void emailTXValidate()
         {
