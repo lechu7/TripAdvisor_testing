@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace TripAdvisor_testing
@@ -82,6 +83,11 @@ namespace TripAdvisor_testing
         public void registerBTClick()
         {
             registerBT.Click();
+        }
+        public void positiveRegisterTXValidate()
+        {
+            Thread.Sleep(2000);
+            Assert.IsTrue(positiveRegisterTX.Displayed);
         }
     }
 }

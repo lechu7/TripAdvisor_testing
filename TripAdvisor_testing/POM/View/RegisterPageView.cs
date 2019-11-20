@@ -67,5 +67,8 @@ namespace TripAdvisor_testing
 
         [FindsBy(How = How.XPath, Using = "//button[@type='submit']")]
         protected IWebElement registerBT;
+
+        [FindsBy(How = How.XPath, Using = "//div[@class='alert alert-success fade show']")]
+        protected IWebElement positiveRegisterTX;
     }
 }

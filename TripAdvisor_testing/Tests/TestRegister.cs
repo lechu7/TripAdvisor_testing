@@ -45,7 +45,7 @@ namespace TripAdvisor_testing
             registerPageAction.registerPasswordETSet(GlobalVariables.registerPasswordCorrect);
             registerPageAction.registerRepeatPasswordETSet(GlobalVariables.registerPasswordCorrect);
             registerPageAction.registerBTClick();
-            //ToDo Weryfikacja
+            registerPageAction.positiveRegisterTXValidate();
         }
 
         [Test]
@@ -63,7 +63,6 @@ namespace TripAdvisor_testing
             registerPageAction.registerPasswordETSet(GlobalVariables.registerPasswordCorrect);
             registerPageAction.registerRepeatPasswordETSet(GlobalVariables.registerPasswordCorrect);
             registerPageAction.registerBTClick();
-            //ToDo Weryfikacja
         }
 
         [Test]
@@ -82,7 +81,6 @@ namespace TripAdvisor_testing
             registerPageAction.registerRepeatPasswordETSet(GlobalVariables.registerPasswordIncorrect1);
             registerPageAction.registerBTClick();
             registerPageAction.registerPasswordErrValidate();
-            //ToDo Weryfikacja
         }
 
         [Test]
@@ -101,7 +99,6 @@ namespace TripAdvisor_testing
             registerPageAction.registerRepeatPasswordETSet(GlobalVariables.registerPasswordIncorrect2);
             registerPageAction.registerBTClick();
             registerPageAction.registerPasswordErrValidate();
-            //ToDo Weryfikacja
         }
 
         [Test]
@@ -120,7 +117,6 @@ namespace TripAdvisor_testing
             registerPageAction.registerRepeatPasswordETSet(GlobalVariables.registerPasswordIncorrect1);
             registerPageAction.registerBTClick();
             registerPageAction.registerRepeatPasswordErrValidate();
-            //ToDo Weryfikacja
         }
 
         [Test]
@@ -138,7 +134,6 @@ namespace TripAdvisor_testing
             registerPageAction.registerBTClick();
             registerPageAction.registerNameErrValidate();
             registerPageAction.registerSurnameErrValidate();
-            //ToDo Weryfikacja
         }
 
         [Test]
@@ -155,7 +150,6 @@ namespace TripAdvisor_testing
             registerPageAction.registerSurnameErrValidate();
             registerPageAction.registerEmailErrValidate();
             registerPageAction.registerPasswordErrValidate();
-            //ToDo Weryfikacja
         }
     }
 }
