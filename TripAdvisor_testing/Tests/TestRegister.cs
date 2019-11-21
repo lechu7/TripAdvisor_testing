@@ -33,9 +33,10 @@ namespace TripAdvisor_testing
         [Test]
         public void Register2()
         {
-            //REJESTRACJA POPRAWNE DANE - Łukaś
+            //REJESTRACJA POPRAWNE DANE + LOGOWANIE NA NOWE KONTO - Łukaś
             MainPageAction mainPageAction = new MainPageAction(driver);
             RegisterPageAction registerPageAction = new RegisterPageAction(driver);
+            LoginPageAction loginPageAction = new LoginPageAction(driver);
 
             mainPageAction.clickUzytkownikBT();
             mainPageAction.clickZarejestrujBT();
@@ -46,6 +47,12 @@ namespace TripAdvisor_testing
             registerPageAction.registerRepeatPasswordETSet(GlobalVariables.registerPasswordCorrect);
             registerPageAction.registerBTClick();
             registerPageAction.positiveRegisterTXValidate();
+            mainPageAction.clickUzytkownikBT();
+            mainPageAction.clickZalogujBT();
+            loginPageAction.emailETSet(GlobalVariables.registerEmailCorrect);
+            loginPageAction.passwordETSet(GlobalVariables.registerPasswordCorrect);
+            loginPageAction.loginBTClick();
+            loginPageAction.positiveLoginTXValidate();
         }
 
         [Test]
