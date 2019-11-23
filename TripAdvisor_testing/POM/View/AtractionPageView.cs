@@ -32,6 +32,7 @@ namespace TripAdvisor_testing
         [FindsBy(How = How.Id, Using = "description")]
         protected IWebElement opisET;
         
+
         [FindsBy(How = How.XPath, Using = "//*[text()='Opis']/following-sibling::div/div")]
         protected IWebElement opisErr;
         
@@ -49,5 +50,8 @@ namespace TripAdvisor_testing
 
         [FindsBy(How = How.XPath, Using = "//button[@type='submit']")]
         protected IWebElement sendBT;
+
+        [FindsBy(How = How.XPath, Using = "//button[@class='btn btn-info']")]
+        protected IWebElement localizationBT;
     }
 }

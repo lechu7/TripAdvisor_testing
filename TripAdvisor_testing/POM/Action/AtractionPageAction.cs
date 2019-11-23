@@ -18,6 +18,7 @@ namespace TripAdvisor_testing
         }
         public void nazwaTXValidate()
         {
+            Thread.Sleep(2000);
             Assert.IsTrue(nazwaTX.Displayed);
         }
         public void nazwaETSet(String value)
@@ -32,18 +33,17 @@ namespace TripAdvisor_testing
         {
             opisET.SendKeys(value);
         }
-       // public void imageBTClick()
-       // {
-       //     image2BT.Click();
-       // }
         public void imageETSet(String value)
         {
-            //imageET.SendKeys(value);
             imageBT.SendKeys(value);
         }
         public void sendBTClick()
         {
             sendBT.Click();
+        }
+        public void localizationBTClick()
+        {
+            localizationBT.Click();
         }
     }
 }

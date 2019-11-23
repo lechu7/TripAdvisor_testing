@@ -22,8 +22,9 @@ namespace TripAdvisor_testing
             atractionPageAction.nazwaETSet("bar");
             atractionPageAction.opisTXValidate();
             atractionPageAction.opisETSet("najlepszy bar");
+            atractionPageAction.localizationBTClick();
             atractionPageAction.imageETSet(GlobalVariables.atractionImagePositive);
-            atractionPageAction.sendBTClick();
+           // atractionPageAction.sendBTClick();
         }
 
         [Test]
@@ -39,6 +40,7 @@ namespace TripAdvisor_testing
             mainPageAction.clickDodajAtrakcjeBT();
             atractionPageAction.nazwaETSet(GlobalVariables.atractionNamePositive);
             atractionPageAction.opisETSet(GlobalVariables.atractionOpisPositive);
+            atractionPageAction.localizationBTClick();
             atractionPageAction.imageETSet(GlobalVariables.atractionImagePositive);
             atractionPageAction.sendBTClick();
         }
@@ -55,6 +57,7 @@ namespace TripAdvisor_testing
             loginPageAction.positiveLogin();
             mainPageAction.clickDodajAtrakcjeBT();
             atractionPageAction.opisETSet(GlobalVariables.atractionOpisPositive);
+            atractionPageAction.localizationBTClick();
             atractionPageAction.imageETSet(GlobalVariables.atractionImagePositive);
             atractionPageAction.sendBTClick();
         }
@@ -71,8 +74,10 @@ namespace TripAdvisor_testing
             loginPageAction.positiveLogin();
             mainPageAction.clickDodajAtrakcjeBT();
             atractionPageAction.nazwaETSet(GlobalVariables.atractionNamePositive);
+            atractionPageAction.localizationBTClick();
             atractionPageAction.imageETSet(GlobalVariables.atractionImagePositive);
-           // atractionPageAction.sendBTClick();
+            atractionPageAction.sendBTClick();
+           // atractionPageAction.nazwaTXValidate(); 
         }
 
         [Test]
@@ -88,6 +93,7 @@ namespace TripAdvisor_testing
             mainPageAction.clickDodajAtrakcjeBT();
             atractionPageAction.nazwaETSet(GlobalVariables.atractionNamePositive);
             atractionPageAction.opisETSet(GlobalVariables.atractionOpisPositive);
+            atractionPageAction.localizationBTClick();
             atractionPageAction.sendBTClick();
         }
     }
