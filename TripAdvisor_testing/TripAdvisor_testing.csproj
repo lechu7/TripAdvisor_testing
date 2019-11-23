@@ -72,12 +72,15 @@
   <ItemGroup>
     <Compile Include="BaseTest.cs" />
     <Compile Include="GlobalVariables.cs" />
+    <Compile Include="POM\Action\AtractionPageAction.cs" />
     <Compile Include="POM\Action\MainPageAction.cs" />
     <Compile Include="POM\Action\LoginPageAction.cs" />
     <Compile Include="POM\Action\RegisterPageAction.cs" />
+    <Compile Include="POM\View\AtractionPageView.cs" />
     <Compile Include="POM\View\MainPageView.cs" />
     <Compile Include="POM\View\LoginPageView.cs" />
     <Compile Include="POM\View\RegisterPageView.cs" />
+    <Compile Include="Tests\TestDodajAtrakcje.cs" />
     <Compile Include="Tests\TestLogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\TestRegister.cs" />

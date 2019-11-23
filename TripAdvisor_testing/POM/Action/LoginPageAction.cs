@@ -71,6 +71,7 @@ namespace TripAdvisor_testing
             emailET.SendKeys(GlobalVariables.emailPositive);
             passwordET.SendKeys(GlobalVariables.passwordPositive);
             loginBT.Click();
+            Thread.Sleep(2000);
         }
 
     }
