@@ -28,17 +28,13 @@ namespace TripAdvisor_testing
 
         [FindsBy(How = How.XPath, Using = "//label[text()='Opis']")]
         protected IWebElement opisTX;
-
-        [FindsBy(How = How.Id, Using = "description")]
+        
+        [FindsBy(How = How.XPath, Using = "//textarea[@class='form-input form-control']")]
         protected IWebElement opisET;
         
-
         [FindsBy(How = How.XPath, Using = "//*[text()='Opis']/following-sibling::div/div")]
         protected IWebElement opisErr;
         
-      //  [FindsBy(How = How.XPath, Using = "//label[text()='image']")]
-       // protected IWebElement image2BT;
-
         [FindsBy(How = How.XPath, Using = "//input[@type='file']")]
         protected IWebElement imageBT;
 
@@ -51,7 +47,7 @@ namespace TripAdvisor_testing
         [FindsBy(How = How.XPath, Using = "//button[@type='submit']")]
         protected IWebElement sendBT;
 
-        [FindsBy(How = How.XPath, Using = "//button[@class='btn btn-info']")]
+        [FindsBy(How = How.XPath, Using = "//button[text()='Udostępnij']")]
         protected IWebElement localizationBT;
 
         //GENERATOR

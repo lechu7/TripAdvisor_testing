@@ -24,7 +24,7 @@ namespace TripAdvisor_testing
             atractionPageAction.opisETSet("najlepszy bar");
             atractionPageAction.localizationBTClick();
             atractionPageAction.imageETSet(GlobalVariables.atractionImagePositive);
-           // atractionPageAction.sendBTClick();
+            atractionPageAction.sendBTClick();
         }
 
         [Test]
@@ -77,7 +77,6 @@ namespace TripAdvisor_testing
             atractionPageAction.localizationBTClick();
             atractionPageAction.imageETSet(GlobalVariables.atractionImagePositive);
             atractionPageAction.sendBTClick();
-           // atractionPageAction.nazwaTXValidate(); 
         }
 
         [Test]
