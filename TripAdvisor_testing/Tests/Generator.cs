@@ -34,7 +34,7 @@ namespace TripAdvisor_testing
             string  startupPath = AppDomain.CurrentDomain.BaseDirectory;
             Random random = new Random();
 
-            int countOfImage = 10;
+            int countOfImage = 16;
 
             for (int i = 0; i < 10; i++)
             {
