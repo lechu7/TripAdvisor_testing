@@ -18,9 +18,14 @@ namespace TripAdvisor_testing
         [SetUp]
         public void beforeTest()
         {
+            FirefoxOptions op = new FirefoxOptions();
+            op.SetPreference("geo.enabled", true);
+            op.SetPreference("geo.provider.use_corelocation", true);
+            op.SetPreference("geo.prompt.testing", true);
+            op.SetPreference("geo.prompt.testing.allow", true);
             service = FirefoxDriverService.CreateDefaultService();
             // service.FirefoxBinaryPath = @"C:\Program Files\Mozilla Firefox\firefox.exe";
-            driver = new FirefoxDriver(service);
+            driver = new FirefoxDriver(service,op);
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(15);//PRĘDKOŚć SKRYPTU
             driver.Navigate().GoToUrl(GlobalVariables.URL);
         }

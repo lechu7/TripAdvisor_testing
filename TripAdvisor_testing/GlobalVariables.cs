@@ -46,5 +46,8 @@ namespace TripAdvisor_testing
         static string startupPath = System.IO.Directory.GetCurrentDirectory();
         //static string startupPath = AppDomain.CurrentDomain.BaseDirectory; //DL
         public static string atractionImagePositive = startupPath + "\\TripAdvisor_testing\\bin\\debug\\Obrazki\\1.jpg";
+
+
+        public static string locationPath = startupPath + "\\TripAdvisor_testing\\bin\\debug\\Obrazki\\1.jpg";
     }
 }
