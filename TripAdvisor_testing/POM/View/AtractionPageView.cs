@@ -17,7 +17,7 @@ namespace TripAdvisor_testing
             PageFactory.InitElements(driver, this);
         }
 
-        [FindsBy(How = How.XPath, Using = "//label[text()='Nazwa']")]
+        [FindsBy(How = How.XPath, Using = "//label[text()=' Nazwa ']")]
         protected IWebElement nazwaTX;
 
         [FindsBy(How = How.XPath, Using = "//*[text()='Nazwa']/following-sibling::div/div")]
@@ -53,5 +53,12 @@ namespace TripAdvisor_testing
 
         [FindsBy(How = How.XPath, Using = "//button[@class='btn btn-info']")]
         protected IWebElement localizationBT;
+
+        //GENERATOR
+        [FindsBy(How = How.XPath, Using = "//input[@name='lng']")]
+        protected IWebElement widthET;
+
+        [FindsBy(How = How.XPath, Using = "//input[@name='lat']")]
+        protected IWebElement heightET;
     }
 }

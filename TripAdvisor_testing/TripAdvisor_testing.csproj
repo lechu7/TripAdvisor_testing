@@ -80,6 +80,7 @@
     <Compile Include="POM\View\MainPageView.cs" />
     <Compile Include="POM\View\LoginPageView.cs" />
     <Compile Include="POM\View\RegisterPageView.cs" />
+    <Compile Include="Tests\Generator.cs" />
     <Compile Include="Tests\TestDodajAtrakcje.cs" />
     <Compile Include="Tests\TestLogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

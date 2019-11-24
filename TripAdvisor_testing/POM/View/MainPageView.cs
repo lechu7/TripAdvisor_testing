@@ -32,6 +32,9 @@ namespace TripAdvisor_testing
         [FindsBy(How = How.XPath, Using = "//a[text()='Zaloguj']")]
         protected IWebElement zalogujBT;
 
+        [FindsBy(How = How.XPath, Using = "//a[text()='Wyloguj']")]
+        protected IWebElement wylogujBT;
+
         [FindsBy(How = How.XPath, Using = "//a[text()='Zarejestruj']")]
         protected IWebElement zarejestrujBT;
 

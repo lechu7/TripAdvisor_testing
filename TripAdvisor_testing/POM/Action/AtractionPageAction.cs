@@ -45,5 +45,15 @@ namespace TripAdvisor_testing
         {
             localizationBT.Click();
         }
+
+        //GENERATOR
+        public void heightSet(String value)
+        {
+            heightET.SendKeys(value);
+        }
+        public void widthSet(String value)
+        {
+            widthET.SendKeys(value);
+        }
     }
 }

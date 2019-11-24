@@ -20,11 +20,12 @@ namespace TripAdvisor_testing
         {
             Assert.IsTrue(zalogujTitleTX.Displayed);
         }
-        public void positiveLoginTXValidate()
-        {
-            Thread.Sleep(2000);
-            Assert.IsTrue(positiveLoginTX.Displayed);
-        }
+
+        //public void positiveLoginTXValidate()
+        //{
+        //    Thread.Sleep(2000);
+        //    Assert.IsTrue(positiveLoginTX.Displayed);
+        //}
         public void negativeLoginTXValidate()
         {
             Thread.Sleep(2000);

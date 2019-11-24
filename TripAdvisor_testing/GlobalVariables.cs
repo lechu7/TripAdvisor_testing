@@ -44,6 +44,7 @@ namespace TripAdvisor_testing
         public static string atractionNamePositive = "bar";
         public static string atractionOpisPositive = "najlepszy bar w okolicy";
         static string startupPath = System.IO.Directory.GetCurrentDirectory();
-        public static string atractionImagePositive = startupPath + "\\TripAdvisor_testing\\bin\\debug\\barImage01.jpg";
+        //static string startupPath = AppDomain.CurrentDomain.BaseDirectory; //DL
+        public static string atractionImagePositive = startupPath + "\\TripAdvisor_testing\\bin\\debug\\Obrazki\\1.jpg";
     }
 }

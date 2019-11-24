@@ -38,7 +38,8 @@ namespace TripAdvisor_testing
             mainPageAction.clickUzytkownikBT();
             mainPageAction.clickZalogujBT();
             loginPageAction.positiveLogin();
-            loginPageAction.positiveLoginTXValidate();
+            mainPageAction.clickUzytkownikBT();
+            mainPageAction.clickWylogujBT();
         }
 
         [Test]

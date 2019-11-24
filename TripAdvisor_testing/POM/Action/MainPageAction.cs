@@ -35,6 +35,10 @@ namespace TripAdvisor_testing
         {
             zalogujBT.Click();
         }
+        public void clickWylogujBT()
+        {
+            wylogujBT.Click();
+        }
         public void clickZarejestrujBT()
         {
             zarejestrujBT.Click();

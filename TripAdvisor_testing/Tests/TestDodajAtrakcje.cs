@@ -18,7 +18,7 @@ namespace TripAdvisor_testing
             mainPageAction.clickDodajAtrakcjeBT();
             loginPageAction.positiveLogin();
             mainPageAction.clickDodajAtrakcjeBT();
-            //atractionPageAction.nazwaTXValidate(); nie dziala czemuś
+            atractionPageAction.nazwaTXValidate();
             atractionPageAction.nazwaETSet("bar");
             atractionPageAction.opisTXValidate();
             atractionPageAction.opisETSet("najlepszy bar");

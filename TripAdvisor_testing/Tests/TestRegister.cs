@@ -52,7 +52,9 @@ namespace TripAdvisor_testing
             loginPageAction.emailETSet(GlobalVariables.registerEmailCorrect);
             loginPageAction.passwordETSet(GlobalVariables.registerPasswordCorrect);
             loginPageAction.loginBTClick();
-            loginPageAction.positiveLoginTXValidate();
+            //loginPageAction.positiveLoginTXValidate();
+            mainPageAction.clickUzytkownikBT(); //DL
+            mainPageAction.clickWylogujBT(); //DL
         }
 
         [Test]
