@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
@@ -46,15 +47,14 @@ namespace TripAdvisor_testing
             registerPageAction.registerPasswordETSet(GlobalVariables.registerPasswordCorrect);
             registerPageAction.registerRepeatPasswordETSet(GlobalVariables.registerPasswordCorrect);
             registerPageAction.registerBTClick();
-            registerPageAction.positiveRegisterTXValidate();
             mainPageAction.clickUzytkownikBT();
             mainPageAction.clickZalogujBT();
             loginPageAction.emailETSet(GlobalVariables.registerEmailCorrect);
             loginPageAction.passwordETSet(GlobalVariables.registerPasswordCorrect);
             loginPageAction.loginBTClick();
-            //loginPageAction.positiveLoginTXValidate();
-            mainPageAction.clickUzytkownikBT(); //DL
-            mainPageAction.clickWylogujBT(); //DL
+            Thread.Sleep(2000);
+            mainPageAction.clickUzytkownikBT();
+            mainPageAction.clickWylogujBT();
         }
 
         [Test]

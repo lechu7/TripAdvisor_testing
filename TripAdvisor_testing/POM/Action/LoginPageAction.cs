@@ -26,6 +26,7 @@ namespace TripAdvisor_testing
         //    Thread.Sleep(2000);
         //    Assert.IsTrue(positiveLoginTX.Displayed);
         //}
+
         public void negativeLoginTXValidate()
         {
             Thread.Sleep(2000);

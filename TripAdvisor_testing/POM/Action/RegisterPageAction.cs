@@ -84,10 +84,10 @@ namespace TripAdvisor_testing
         {
             registerBT.Click();
         }
-        public void positiveRegisterTXValidate()
-        {
-            Thread.Sleep(2000);
-            Assert.IsTrue(positiveRegisterTX.Displayed);
-        }
+        //public void positiveRegisterTXValidate()
+        //{
+        //    Thread.Sleep(2000);
+        //    Assert.IsTrue(positiveRegisterTX.Displayed);
+        //}
     }
 }
