@@ -39,11 +39,18 @@ namespace TripAdvisor_testing
         }
         public void sendBTClick()
         {
+            Thread.Sleep(2000);
             sendBT.Click();
+           // Thread.Sleep(10000);
         }
         public void localizationBTClick()
         {
             localizationBT.Click();
+        }
+
+        public void nazwaErrValidate()
+        {
+            Assert.True(nazwaErr.Displayed);
         }
 
         //GENERATOR

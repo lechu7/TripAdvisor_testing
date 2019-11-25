@@ -20,7 +20,7 @@ namespace TripAdvisor_testing
         [FindsBy(How = How.XPath, Using = "//label[text()=' Nazwa ']")]
         protected IWebElement nazwaTX;
 
-        [FindsBy(How = How.XPath, Using = "//*[text()='Nazwa']/following-sibling::div/div")]
+        [FindsBy(How = How.XPath, Using = "//*[@class='col-12 invalid-feedback']")]
         protected IWebElement nazwaErr;
 
         [FindsBy(How = How.Id, Using = "title")]
@@ -32,8 +32,6 @@ namespace TripAdvisor_testing
         [FindsBy(How = How.XPath, Using = "//textarea[@class='form-input form-control']")]
         protected IWebElement opisET;
         
-        [FindsBy(How = How.XPath, Using = "//*[text()='Opis']/following-sibling::div/div")]
-        protected IWebElement opisErr;
         
         [FindsBy(How = How.XPath, Using = "//input[@type='file']")]
         protected IWebElement imageBT;
@@ -43,12 +41,18 @@ namespace TripAdvisor_testing
 
         [FindsBy(How = How.Id, Using = "image")]
         protected IWebElement imageET;
-
+        
         [FindsBy(How = How.XPath, Using = "//button[@type='submit']")]
         protected IWebElement sendBT;
 
         [FindsBy(How = How.XPath, Using = "//button[text()='Udostępnij']")]
         protected IWebElement localizationBT;
+
+
+      //  [FindsBy(How = How.XPath, Using = "//label[text()='Opis']")]
+       // protected IWebElement nazwaErrTX;
+
+
 
         //GENERATOR
         [FindsBy(How = How.XPath, Using = "//input[@name='lng']")]

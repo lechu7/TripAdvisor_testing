@@ -60,6 +60,7 @@ namespace TripAdvisor_testing
             atractionPageAction.localizationBTClick();
             atractionPageAction.imageETSet(GlobalVariables.atractionImagePositive);
             atractionPageAction.sendBTClick();
+            atractionPageAction.nazwaErrValidate();
         }
 
         [Test]
