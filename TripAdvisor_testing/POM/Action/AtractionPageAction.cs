@@ -41,7 +41,7 @@ namespace TripAdvisor_testing
         {
             Thread.Sleep(2000);
             sendBT.Click();
-           // Thread.Sleep(10000);
+            Thread.Sleep(10000);
         }
         public void localizationBTClick()
         {
